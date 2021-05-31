@@ -66,9 +66,8 @@
           <Property Name="Giatien" Type="decimal" Precision="18" Scale="0" />
           <Property Name="Soluong" Type="int" />
           <Property Name="Mota" Type="ntext" />
-          <Property Name="Thesim" Type="int" />
           <Property Name="Bonhotrong" Type="int" />
-          <Property Name="Sanphammoi" Type="bit" />
+          <Property Name="Sanphammoi" Type="bit" Nullable="false" />
           <Property Name="Ram" Type="int" />
           <Property Name="Anhbia" Type="nvarchar" MaxLength="50" />
           <Property Name="Mahang" Type="int" />
@@ -160,9 +159,8 @@
           <Property Name="Giatien" Type="Decimal" Precision="18" Scale="0" />
           <Property Name="Soluong" Type="Int32" />
           <Property Name="Mota" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
-          <Property Name="Thesim" Type="Int32" />
           <Property Name="Bonhotrong" Type="Int32" />
-          <Property Name="Sanphammoi" Type="Boolean" />
+          <Property Name="Sanphammoi" Type="Boolean" Nullable="false" />
           <Property Name="Ram" Type="Int32" />
           <Property Name="Anhbia" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
           <Property Name="Mahang" Type="Int32" />
@@ -178,7 +176,7 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityContainer Name="CT25Team16Entities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="CT25Team16Entities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Chitietdonhangs" EntityType="Self.Chitietdonhang" />
           <EntitySet Name="Donhangs" EntityType="Self.Donhang" />
           <EntitySet Name="Hangsanxuats" EntityType="Self.Hangsanxuat" />
@@ -193,7 +191,7 @@
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CT25Team16ModelStoreContainer" CdmEntityContainer="CT25Team16Entities">
+        <EntityContainerMapping StorageEntityContainer="CT25Team16ModelStoreContainer" CdmEntityContainer="CT25Team16Entities1">
           <EntitySetMapping Name="Chitietdonhangs">
             <EntityTypeMapping TypeName="CT25Team16Model.Chitietdonhang">
               <MappingFragment StoreEntitySet="Chitietdonhang">
@@ -259,7 +257,6 @@
                 <ScalarProperty Name="Giatien" ColumnName="Giatien" />
                 <ScalarProperty Name="Soluong" ColumnName="Soluong" />
                 <ScalarProperty Name="Mota" ColumnName="Mota" />
-                <ScalarProperty Name="Thesim" ColumnName="Thesim" />
                 <ScalarProperty Name="Bonhotrong" ColumnName="Bonhotrong" />
                 <ScalarProperty Name="Sanphammoi" ColumnName="Sanphammoi" />
                 <ScalarProperty Name="Ram" ColumnName="Ram" />
