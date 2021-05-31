@@ -12,7 +12,7 @@ namespace Ictshop.Areas.Admin.Controllers
 {
     public class HedieuhanhsController : Controller
     {
-        private CT25Team16Entities db = new CT25Team16Entities();
+        private CT25Team16Entities1 db = new CT25Team16Entities1();
 
         // GET: Admin/Hedieuhanhs
         public ActionResult Index()
