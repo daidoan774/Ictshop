@@ -8,7 +8,7 @@ namespace Ictshop.Controllers
 {
     public class UserController : Controller
     {
-        CT25Team16Entities1 db = new CT25Team16Entities1();
+        CT25Team16Entities2 db = new CT25Team16Entities2();
         // ĐĂNG KÝ
         public ActionResult Dangky()
         {

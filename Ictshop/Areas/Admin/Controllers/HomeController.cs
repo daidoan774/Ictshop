@@ -11,7 +11,7 @@ namespace Ictshop.Areas.Admin.Controllers
     public class HomeController : Controller
         
     {
-        CT25Team16Entities1 db = new CT25Team16Entities1();
+        CT25Team16Entities2 db = new CT25Team16Entities2();
        
         // GET: Admin/Home
         
@@ -102,9 +102,7 @@ namespace Ictshop.Areas.Admin.Controllers
                 oldItem.Giatien = sanpham.Giatien;
                 oldItem.Soluong = sanpham.Soluong;
                 oldItem.Mota = sanpham.Mota;
-                oldItem.Anhbia = sanpham.Anhbia;
-                oldItem.Bonhotrong = sanpham.Bonhotrong;
-                oldItem.Ram = sanpham.Ram;
+                oldItem.Anhbia = sanpham.Anhbia;     
                 oldItem.Mahang = sanpham.Mahang;
                 oldItem.Mahdh = sanpham.Mahdh;
                 // lưu lại
