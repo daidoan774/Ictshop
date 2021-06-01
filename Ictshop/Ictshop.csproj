@@ -270,11 +270,6 @@
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\Admin\Views\web.config" />
-    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Details.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Edit.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Delete.cshtml" />
-    <Content Include="Areas\Admin\Views\Home\Create.cshtml" />
     <Content Include="Areas\Assets\.browserslistrc" />
     <Content Include="Areas\Assets\.travis.yml" />
     <Content Include="Areas\Assets\LICENSE" />
@@ -348,6 +343,11 @@
     <Content Include="Models\qlbanhang.edmx.diagram">
       <DependentUpon>qlbanhang.edmx</DependentUpon>
     </Content>
+    <Content Include="Areas\Admin\Views\Home\Create.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Delete.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Details.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Edit.cshtml" />
+    <Content Include="Areas\Admin\Views\Home\Index.cshtml" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -375,11 +375,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
-    <Content Include="Views\Sanpham\dtxiaomipartial.cshtml" />
-    <Content Include="Views\Sanpham\dtiphonePartial.cshtml" />
     <Content Include="Views\Danhmuc\DanhmucPartial.cshtml" />
     <Content Include="Views\Home\SlidePartial.cshtml" />
-    <Content Include="Views\Sanpham\dtsamsungpartial.cshtml" />
     <Content Include="Views\Sanpham\xemchitiet.cshtml" />
     <Content Include="Views\User\Dangky.cshtml" />
     <Content Include="Views\User\Dangnhap.cshtml" />
@@ -387,6 +384,9 @@
     <Content Include="Views\GioHang\GioHang.cshtml" />
     <Content Include="Views\GioHang\GioHangPartial.cshtml" />
     <Content Include="Views\GioHang\SuaGioHang.cshtml" />
+    <Content Include="Views\Sanpham\Adidas.cshtml" />
+    <Content Include="Views\Sanpham\Gucci.cshtml" />
+    <Content Include="Views\Sanpham\Tommi.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
