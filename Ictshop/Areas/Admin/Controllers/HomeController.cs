@@ -103,7 +103,7 @@ namespace Ictshop.Areas.Admin.Controllers
                 oldItem.Soluong = sanpham.Soluong;
                 oldItem.Mota = sanpham.Mota;
                 oldItem.Anhbia = sanpham.Anhbia;
-                oldItem.Bonhotrong = sanpham.Bonhotrong;
+                
                 
                 oldItem.Mahang = sanpham.Mahang;
                 oldItem.Mahdh = sanpham.Mahdh;
