@@ -113,7 +113,7 @@ namespace Ictshop.Areas.Admin.Controllers
             return View(nguoidung);
         }
 
-        // POST: Admin/Nguoidungs/Delete/5
+        // POST: Admin/Nguoidungs/Delete/ 
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public ActionResult DeleteConfirmed(int id)
