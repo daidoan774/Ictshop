@@ -102,9 +102,7 @@ namespace Ictshop.Areas.Admin.Controllers
                 oldItem.Giatien = sanpham.Giatien;
                 oldItem.Soluong = sanpham.Soluong;
                 oldItem.Mota = sanpham.Mota;
-                oldItem.Anhbia = sanpham.Anhbia;
-                
-                
+                oldItem.Anhbia = sanpham.Anhbia;   
                 oldItem.Mahang = sanpham.Mahang;
                 oldItem.Mahdh = sanpham.Mahdh;
                 // lưu lại
