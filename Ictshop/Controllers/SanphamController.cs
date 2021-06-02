@@ -9,20 +9,20 @@ namespace Ictshop.Controllers
 {
     public class SanphamController : Controller
     {
-        CT25Team16Entities db = new CT25Team16Entities();
+        CT25Team16Entities2 db = new CT25Team16Entities2();
 
         // GET: Sanpham
-        public ActionResult dtiphonepartial()
+        public ActionResult Adidas()
         {
             var ip = db.Sanphams.Where(n=>n.Mahang==2).Take(4).ToList();
            return PartialView(ip);
         }
-        public ActionResult dtsamsungpartial()
+        public ActionResult Gucci()
         {
             var ss = db.Sanphams.Where(n => n.Mahang == 1).Take(4).ToList();
             return PartialView(ss);
         }
-        public ActionResult dtxiaomipartial()
+        public ActionResult Tommi()
         {
             var mi = db.Sanphams.Where(n => n.Mahang == 3).Take(4).ToList();
             return PartialView(mi);

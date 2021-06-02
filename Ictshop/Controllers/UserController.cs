@@ -8,7 +8,7 @@ namespace Ictshop.Controllers
 {
     public class UserController : Controller
     {
-        CT25Team16Entities db = new CT25Team16Entities();
+        CT25Team16Entities2 db = new CT25Team16Entities2();
         // ĐĂNG KÝ
         public ActionResult Dangky()
         {
@@ -50,21 +50,24 @@ namespace Ictshop.Controllers
         {
             string userMail = userlog["userMail"].ToString();
             string password = userlog["password"].ToString();
-            var islogin = db.Nguoidungs.SingleOrDefault(x => x.Email.Equals(userMail) && x.Matkhau.Equals(password));
-
-            if (islogin != null)
+            var result = db.Nguoidungs.SingleOrDefault(x => x.Email.Equals(userMail) && x.Matkhau.Equals(password));
+            if (result != null)
                 {
-                    if (userMail == "Admin@gmail.com")
+                    if (userMail == "Admin@vanlanguni.vn")
                         {
-                           Session["use"] = islogin;
+                           Session["use"] = result;
                            return RedirectToAction("Index", "Admin/Home");
                         }
                      else
                          {
-                           Session["use"] = islogin;
+                           Session["use"] = result;
                            return RedirectToAction("Index","Home");
                          }
                  }
+            else if (result == null)
+            {
+                return ViewBag("Hay nhap Email cua ban");
+            }
             else
                 {
                     ViewBag.Fail = "Đăng nhập thất bại";

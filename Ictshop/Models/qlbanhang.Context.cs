@@ -13,10 +13,10 @@ namespace Ictshop.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CT25Team16Entities : DbContext
+    public partial class CT25Team16Entities2 : DbContext
     {
-        public CT25Team16Entities()
-            : base("name=CT25Team16Entities")
+        public CT25Team16Entities2()
+            : base("name=CT25Team16Entities2")
         {
         }
     

@@ -19,10 +19,7 @@ namespace Ictshop.Models
         public Nullable<decimal> Giatien { get; set; }
         public Nullable<int> Soluong { get; set; }
         public string Mota { get; set; }
-        public Nullable<int> Thesim { get; set; }
-        public Nullable<int> Bonhotrong { get; set; }
-        public Nullable<bool> Sanphammoi { get; set; }
-        public Nullable<int> Ram { get; set; }
+        public bool Sanphammoi { get; set; }
         public string Anhbia { get; set; }
         public Nullable<int> Mahang { get; set; }
         public Nullable<int> Mahdh { get; set; }

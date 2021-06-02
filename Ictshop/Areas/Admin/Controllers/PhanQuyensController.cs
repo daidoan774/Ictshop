@@ -12,7 +12,7 @@ namespace Ictshop.Areas.Admin.Controllers
 {
     public class PhanQuyensController : Controller
     {
-        private CT25Team16Entities db = new CT25Team16Entities();
+        private CT25Team16Entities2 db = new CT25Team16Entities2();
 
         // GET: Admin/PhanQuyens
         public ActionResult Index()
