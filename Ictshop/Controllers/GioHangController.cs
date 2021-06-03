@@ -189,8 +189,9 @@ namespace Ictshop.Controllers
                 db.Chitietdonhangs.Add(ctDH);
             }
             db.SaveChanges();
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "ThanhToan");
         }
+       
         #endregion
 
     }

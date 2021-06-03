@@ -14,13 +14,13 @@ namespace Ictshop.Controllers
         // GET: Sanpham
         public ActionResult Adidas()
         {
-            var ip = db.Sanphams.Where(n=>n.Mahang==2).Take(4).ToList();
-           return PartialView(ip);
+            var adi = db.Sanphams.Where(n=>n.Mahang==2).Take(4).ToList();
+           return PartialView(adi);
         }
         public ActionResult Gucci()
         {
-            var ss = db.Sanphams.Where(n => n.Mahang == 1).Take(4).ToList();
-            return PartialView(ss);
+            var guc = db.Sanphams.Where(n => n.Mahang == 1).Take(4).ToList();
+            return PartialView(guc);
         }
         public ActionResult Tommi()
         {
