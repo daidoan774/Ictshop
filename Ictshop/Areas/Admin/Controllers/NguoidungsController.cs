@@ -12,7 +12,7 @@ namespace Ictshop.Areas.Admin.Controllers
 {
     public class NguoidungsController : Controller
     {
-        private CT25Team16Entities2 db = new CT25Team16Entities2();
+        private CT25Team16Entities db = new CT25Team16Entities();
 
         // Xem quản lý tất cả người dùng
         // GET: Admin/Nguoidungs

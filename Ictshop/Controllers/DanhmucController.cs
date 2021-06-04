@@ -9,7 +9,7 @@ namespace Ictshop.Controllers
 {
     public class DanhmucController : Controller
     {
-        CT25Team16Entities2 db = new CT25Team16Entities2();
+        CT25Team16Entities db = new CT25Team16Entities();
         // GET: Danhmuc
         public ActionResult DanhmucPartial()
         {
