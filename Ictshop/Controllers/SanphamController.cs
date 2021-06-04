@@ -9,7 +9,7 @@ namespace Ictshop.Controllers
 {
     public class SanphamController : Controller
     {
-        CT25Team16Entities2 db = new CT25Team16Entities2();
+        CT25Team16Entities db = new CT25Team16Entities();
 
         // GET: Sanpham
         public ActionResult Adidas()

@@ -14,7 +14,7 @@ namespace Ictshop.Models
         //    get { return iMaSP; }
         //    set { iMaSP = value; }
         //}
-        CT25Team16Entities2 db = new CT25Team16Entities2();
+        CT25Team16Entities db = new CT25Team16Entities();
         public int iMasp { get; set; }
         public string sTensp { get; set; }
         public string sAnhBia { get; set; }

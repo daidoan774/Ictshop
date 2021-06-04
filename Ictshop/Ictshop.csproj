@@ -58,6 +58,9 @@
     <Reference Include="PagedList.Mvc, Version=4.5.0.0, Culture=neutral, PublicKeyToken=abbb863e9397c5e1, processorArchitecture=MSIL">
       <HintPath>..\packages\PagedList.Mvc.4.5.0.0\lib\net40\PagedList.Mvc.dll</HintPath>
     </Reference>
+    <Reference Include="PayPal, Version=1.9.1.0, Culture=neutral, PublicKeyToken=5b4afc1ccaef40fb, processorArchitecture=MSIL">
+      <HintPath>..\packages\PayPal.1.9.1\lib\net451\PayPal.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Drawing" />
@@ -188,6 +191,9 @@
       <DependentUpon>qlbanhang.tt</DependentUpon>
     </Compile>
     <Compile Include="Models\sysdiagram.cs">
+      <DependentUpon>qlbanhang.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\ThanhToan.cs">
       <DependentUpon>qlbanhang.tt</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -407,13 +413,6 @@
     <Content Include="Areas\Admin\Views\PhanQuyens\Edit.cshtml" />
     <Content Include="Areas\Admin\Views\PhanQuyens\Index.cshtml" />
     <Content Include="Areas\Admin\Views\Shared\_LayoutAdmin.cshtml" />
-    <EntityDeploy Include="Models\qlbanhang.edmx">
-      <Generator>EntityModelCodeGenerator</Generator>
-      <LastGenOutput>qlbanhang.Designer.cs</LastGenOutput>
-    </EntityDeploy>
-    <Content Include="Models\qlbanhang.edmx.diagram">
-      <DependentUpon>qlbanhang.edmx</DependentUpon>
-    </Content>
     <Content Include="Areas\Admin\Views\Home\Create.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Delete.cshtml" />
     <Content Include="Areas\Admin\Views\Home\Details.cshtml" />
@@ -428,6 +427,13 @@
     <Content Include="Areas\Assets\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Areas\Assets\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Areas\Assets\fonts\glyphicons-halflings-regular.woff2" />
+    <EntityDeploy Include="Models\qlbanhang.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>qlbanhang.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\qlbanhang.edmx.diagram">
+      <DependentUpon>qlbanhang.edmx</DependentUpon>
+    </Content>
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

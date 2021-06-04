@@ -19,7 +19,7 @@
           <Key>
             <PropertyRef Name="Madon" />
           </Key>
-          <Property Name="Madon" Type="int" Nullable="false" />
+          <Property Name="Madon" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="Ngaydat" Type="datetime" />
           <Property Name="Tinhtrang" Type="int" />
           <Property Name="MaNguoidung" Type="int" />
@@ -81,6 +81,17 @@
           <Property Name="version" Type="int" />
           <Property Name="definition" Type="varbinary(max)" />
         </EntityType>
+        <EntityType Name="ThanhToan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="HoVaTen" Type="varchar" MaxLength="50" />
+          <Property Name="Email" Type="varchar" MaxLength="50" />
+          <Property Name="DiaChi" Type="varchar" MaxLength="250" />
+          <Property Name="SDT" Type="char" MaxLength="10" />
+          <Property Name="NgayThanhToan" Type="datetime" />
+        </EntityType>
         <EntityContainer Name="CT25Team16ModelStoreContainer">
           <EntitySet Name="Chitietdonhang" EntityType="Self.Chitietdonhang" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Donhang" EntityType="Self.Donhang" Schema="dbo" store:Type="Tables" />
@@ -90,6 +101,7 @@
           <EntitySet Name="PhanQuyen" EntityType="Self.PhanQuyen" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="Sanpham" EntityType="Self.Sanpham" Schema="dbo" store:Type="Tables" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagrams" Schema="dbo" store:Type="Tables" />
+          <EntitySet Name="ThanhToan" EntityType="Self.ThanhToan" Schema="dbo" store:Type="Tables" />
         </EntityContainer>
       </Schema>
     </edmx:StorageModels>
@@ -110,7 +122,7 @@
           <Key>
             <PropertyRef Name="Madon" />
           </Key>
-          <Property Name="Madon" Type="Int32" Nullable="false" />
+          <Property Name="Madon" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="Ngaydat" Type="DateTime" Precision="3" />
           <Property Name="Tinhtrang" Type="Int32" />
           <Property Name="MaNguoidung" Type="Int32" />
@@ -172,7 +184,18 @@
           <Property Name="version" Type="Int32" />
           <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
         </EntityType>
-        <EntityContainer Name="CT25Team16Entities2" annotation:LazyLoadingEnabled="true">
+        <EntityType Name="ThanhToan">
+          <Key>
+            <PropertyRef Name="ID" />
+          </Key>
+          <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="HoVaTen" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="Email" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+          <Property Name="DiaChi" Type="String" MaxLength="250" FixedLength="false" Unicode="false" />
+          <Property Name="SDT" Type="String" MaxLength="10" FixedLength="true" Unicode="false" />
+          <Property Name="NgayThanhToan" Type="DateTime" Precision="3" />
+        </EntityType>
+        <EntityContainer Name="CT25Team16Entities" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="Chitietdonhangs" EntityType="Self.Chitietdonhang" />
           <EntitySet Name="Donhangs" EntityType="Self.Donhang" />
           <EntitySet Name="Hangsanxuats" EntityType="Self.Hangsanxuat" />
@@ -181,13 +204,14 @@
           <EntitySet Name="PhanQuyens" EntityType="Self.PhanQuyen" />
           <EntitySet Name="Sanphams" EntityType="Self.Sanpham" />
           <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+          <EntitySet Name="ThanhToans" EntityType="Self.ThanhToan" />
         </EntityContainer>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="CT25Team16ModelStoreContainer" CdmEntityContainer="CT25Team16Entities2">
+        <EntityContainerMapping StorageEntityContainer="CT25Team16ModelStoreContainer" CdmEntityContainer="CT25Team16Entities">
           <EntitySetMapping Name="Chitietdonhangs">
             <EntityTypeMapping TypeName="CT25Team16Model.Chitietdonhang">
               <MappingFragment StoreEntitySet="Chitietdonhang">
@@ -268,6 +292,18 @@
                 <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
                 <ScalarProperty Name="version" ColumnName="version" />
                 <ScalarProperty Name="definition" ColumnName="definition" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="ThanhToans">
+            <EntityTypeMapping TypeName="CT25Team16Model.ThanhToan">
+              <MappingFragment StoreEntitySet="ThanhToan">
+                <ScalarProperty Name="ID" ColumnName="ID" />
+                <ScalarProperty Name="HoVaTen" ColumnName="HoVaTen" />
+                <ScalarProperty Name="Email" ColumnName="Email" />
+                <ScalarProperty Name="DiaChi" ColumnName="DiaChi" />
+                <ScalarProperty Name="SDT" ColumnName="SDT" />
+                <ScalarProperty Name="NgayThanhToan" ColumnName="NgayThanhToan" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

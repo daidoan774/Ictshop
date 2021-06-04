@@ -13,10 +13,10 @@ namespace Ictshop.Models
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class CT25Team16Entities2 : DbContext
+    public partial class CT25Team16Entities : DbContext
     {
-        public CT25Team16Entities2()
-            : base("name=CT25Team16Entities2")
+        public CT25Team16Entities()
+            : base("name=CT25Team16Entities")
         {
         }
     
@@ -33,5 +33,6 @@ namespace Ictshop.Models
         public virtual DbSet<PhanQuyen> PhanQuyens { get; set; }
         public virtual DbSet<Sanpham> Sanphams { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
+        public virtual DbSet<ThanhToan> ThanhToans { get; set; }
     }
 }
