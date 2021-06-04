@@ -12,17 +12,17 @@ namespace Ictshop.Controllers
         CT25Team16Entities db = new CT25Team16Entities();
 
         // GET: Sanpham
-        public ActionResult dtiphonepartial()
+        public ActionResult Adidas()
         {
-            var ip = db.Sanphams.Where(n=>n.Mahang==2).Take(4).ToList();
-           return PartialView(ip);
+            var adi = db.Sanphams.Where(n=>n.Mahang==2).Take(4).ToList();
+           return PartialView(adi);
         }
-        public ActionResult dtsamsungpartial()
+        public ActionResult Gucci()
         {
-            var ss = db.Sanphams.Where(n => n.Mahang == 1).Take(4).ToList();
-            return PartialView(ss);
+            var guc = db.Sanphams.Where(n => n.Mahang == 1).Take(4).ToList();
+            return PartialView(guc);
         }
-        public ActionResult dtxiaomipartial()
+        public ActionResult Tommi()
         {
             var mi = db.Sanphams.Where(n => n.Mahang == 3).Take(4).ToList();
             return PartialView(mi);
