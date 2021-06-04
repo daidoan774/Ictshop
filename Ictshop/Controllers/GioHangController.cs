@@ -170,7 +170,7 @@ namespace Ictshop.Controllers
             {
                 RedirectToAction("Index", "Home");
             }
-            //Thêm đơn hàng
+
             Donhang ddh = new Donhang();
             Nguoidung kh = (Nguoidung)Session["use"];
             List<GioHang> gh = LayGioHang();
