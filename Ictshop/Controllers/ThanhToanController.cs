@@ -10,7 +10,7 @@ namespace Ictshop.Controllers
     public class ThanhToanController : Controller
     {
         CT25Team16Entities db = new CT25Team16Entities();
-        // GET: ThanhToan
+        // GET: ThanhToan/index
         public ActionResult Index()
         {
             return View();
